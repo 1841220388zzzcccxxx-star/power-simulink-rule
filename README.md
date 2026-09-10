@@ -2,7 +2,7 @@
 
 **[English](README_EN.md) | 简体中文**
 
-> 一套完全从 10 个真实可运行的 Simulink 模型反推出来的电力电子建模规范，专为 **Simscape Electrical 特高压库（Specialized Power Systems，俗称"黑库"——库里那批黑色图标模块）** 而写，也可以作为 AI Agent（如 Claude / WorkBuddy 等）搭建仿真时的 skill 使用。
+> 一套完全从 10 个真实可运行的 Simulink 模型反推出来的电力电子建模规范，专为 **Simscape Electrical 特高压库（Specialized Power Systems，俗称"黑库"——库里那批黑色图标模块）** 而写，也可以作为 AI Agent 搭建仿真时的 skill 使用。
 
 ![单相逆变器实例](docs/images/example_single_phase_inverter_spwm.png)
 *用本规范搭建的单相 SPWM 逆变模型实例*
@@ -38,13 +38,13 @@
 
 ### 作为 AI Agent skill 使用（推荐）
 
-把整个目录复制到你的 agent 技能目录，例如 WorkBuddy：
+把整个目录复制到你所用 agent 的技能目录，例如 Claude Code：
 
 ```
-~/.workbuddy/skills/power-simulink-rule/
+~/.claude/skills/power-simulink-rule/
 ```
 
-之后当你要求 agent "搭一个 PFC 仿真 / 逆变模型 / Buck-Boost"时，它会自动按本规范执行。Claude Code / 其他支持 SKILL.md 格式的工具同理。
+之后当你要求 agent "搭一个 PFC 仿真 / 逆变模型 / Buck-Boost"时，它会自动按本规范执行。任何支持 SKILL.md 约定的 agent 工具同理，放进它自己的 skills 目录即可。
 
 ### 人工阅读使用
 

@@ -2,7 +2,7 @@
 
 **English | [简体中文](README.md)**
 
-> A power-electronics modeling rulebook reverse-engineered from 10 real, working Simulink models, written for the **Simscape Electrical Specialized Power Systems library (SPS — the "black block" library, named after its black module icons)**. It also works as a skill for AI agents (Claude, WorkBuddy, etc.) that build simulations.
+> A power-electronics modeling rulebook reverse-engineered from 10 real, working Simulink models, written for the **Simscape Electrical Specialized Power Systems library (SPS — the "black block" library, named after its black module icons)**. It also works as a skill for AI agents that build simulations.
 
 ![Single-phase inverter example](docs/images/example_single_phase_inverter_spwm.png)
 *A single-phase SPWM inverter model built with these rules*
@@ -38,13 +38,13 @@ This is not a textbook of generic best practices. It is a **measured playbook**:
 
 ### As an AI agent skill (recommended)
 
-Copy the whole folder into your agent's skill directory, e.g. for WorkBuddy:
+Copy the whole folder into your agent's skill directory, e.g. for Claude Code:
 
 ```
-~/.workbuddy/skills/power-simulink-rule/
+~/.claude/skills/power-simulink-rule/
 ```
 
-From then on, asking the agent to "build a PFC / inverter / Buck-Boost simulation" makes it follow this rulebook. Claude Code and other tools that support the SKILL.md format work the same way.
+From then on, asking the agent to "build a PFC / inverter / Buck-Boost simulation" makes it follow this rulebook. Any agent tool that supports the SKILL.md convention works the same way — just drop it into that tool's own skills directory.
 
 ### As a human-readable rulebook
 
