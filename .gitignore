@@ -1,0 +1,7 @@
+# Windows / MATLAB artifacts
+*.slxc
+*.autosave
+*.mex*
+*.asv
+Thumbs.db
+Desktop.ini
